@@ -26,4 +26,4 @@ install:
   - python setup.py install
 # command to run tests
 script:
-  - py.test -v --cov=. nblint/tests/test_linters.py --verbose
+  - cd nblint/tests/; py.test -v --cov=. test_linters.py --verbose
