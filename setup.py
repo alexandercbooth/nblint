@@ -8,5 +8,5 @@ setup(name='nblint',
       author_email='alexander.c.booth@gmail.com',
       license='MIT',
       packages=['nblint'],
-      scripts=['bin/nblint', 'bin/nblint.cmd', 'nbformat'],
-      install_requires=['pep8', 'flake8'])
+      scripts=['bin/nblint', 'bin/nblint.cmd'],
+      install_requires=['pep8', 'flake8', 'nbformat'])
