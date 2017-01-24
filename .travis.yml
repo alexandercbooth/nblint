@@ -23,6 +23,7 @@ install:
   - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION scikit-learn pandas numpy
   - source activate test-environment
   - "pip install pytest-cov==2.2.1"
+  - python setup.py install
 # command to run tests
 script:
-  - py.test -v --cov=. nblint/tests/test_linters.py 
+  - py.test -v --cov=. nblint/tests/test_linters.py --verbose

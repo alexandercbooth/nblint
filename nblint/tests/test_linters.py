@@ -1,11 +1,11 @@
 import subprocess
 
-out = subprocess.Popen(["nblint", "../examples/kmeans.ipynb"],
+out = subprocess.Popen(["nblint", "../examplenbs/kmeans.ipynb"],
                        stdout=subprocess.PIPE,
                        stderr=subprocess.STDOUT
                        ).communicate()[0]
 
-out2 = subprocess.Popen(["nblint", "../examples/kmeans.ipynb",
+out2 = subprocess.Popen(["nblint", "../examplenbs/kmeans.ipynb",
                         "--linter", "pyflakes"],
                         stdout=subprocess.PIPE,
                         stderr=subprocess.STDOUT
