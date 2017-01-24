@@ -6,7 +6,7 @@ Lint Jupyter notebooks like a boss
 ![](boss.gif)
 
 
-A simple CLI tool to wrap lint to Jupyter notebooks.
+A simple CLI tool to lint to Jupyter notebooks.
 ## Installation
 with pip
 ```bash
