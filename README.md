@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.com/alexandercbooth/nblint.svg?token=UDZsiVdppziAsV1HLtLw&branch=master)](https://travis-ci.com/alexandercbooth/nblint)
 
 Lint Jupyter notebooks like a boss
+---
 ![](boss.gif)
 
 ## Installation
