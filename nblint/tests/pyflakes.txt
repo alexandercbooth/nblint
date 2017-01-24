@@ -1,0 +1,3 @@
+Code Cell 3 that starts with 'class Exam' has the following flake8                  errors
+ tmp.py:1: 'logging' imported but unused
+

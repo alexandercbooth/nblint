@@ -1,0 +1,60 @@
+Code Cell 0 that starts with 'import math, sys, logging;' has the following                       errors
+ tmp.py:1:12: E401 multiple imports on one line
+tmp.py:1:26: E703 statement ends with a semicolon
+
+Code Cell 1 that starts with 'def example1():' has the following                       errors
+ tmp.py:2:5: E265 block comment should start with '# '
+tmp.py:2:80: E501 line too long (83 > 79 characters)
+tmp.py:3:15: E225 missing whitespace around operator
+tmp.py:3:17: E201 whitespace after '('
+tmp.py:3:21: E231 missing whitespace after ','
+tmp.py:3:26: E231 missing whitespace after ','
+tmp.py:3:31: E202 whitespace before ')'
+tmp.py:3:33: E703 statement ends with a semicolon
+tmp.py:4:18: E225 missing whitespace around operator
+tmp.py:4:26: E231 missing whitespace after ':'
+tmp.py:4:80: E501 line too long (84 > 79 characters)
+tmp.py:5:5: E128 continuation line under-indented for visual indent
+tmp.py:5:12: E231 missing whitespace after ':'
+tmp.py:5:26: E231 missing whitespace after ','
+tmp.py:5:30: E231 missing whitespace after ','
+tmp.py:5:34: E231 missing whitespace after ','
+tmp.py:5:45: E231 missing whitespace after ','
+tmp.py:5:80: E501 line too long (83 > 79 characters)
+tmp.py:6:5: E122 continuation line missing indentation or outdented
+tmp.py:6:11: E231 missing whitespace after ':'
+tmp.py:6:20: E231 missing whitespace after ':'
+tmp.py:6:65: E231 missing whitespace after ','
+tmp.py:6:76: E231 missing whitespace after ':'
+tmp.py:7:5: E128 continuation line under-indented for visual indent
+tmp.py:7:7: E231 missing whitespace after ','
+tmp.py:7:11: E231 missing whitespace after ','
+tmp.py:7:17: E231 missing whitespace after ','
+tmp.py:7:27: E231 missing whitespace after ','
+
+Code Cell 2 that starts with 'def example2(): return {'has_key() is deprecated':True}.has_key({'f':2}.has_key(''));' has the following                       errors
+ tmp.py:1:50: E231 missing whitespace after ':'
+tmp.py:1:56: W601 .has_key() is deprecated, use 'in'
+tmp.py:1:69: E231 missing whitespace after ':'
+tmp.py:1:80: E501 line too long (85 > 79 characters)
+tmp.py:1:85: E703 statement ends with a semicolon
+
+Code Cell 3 that starts with 'class Example3(   object ):' has the following                       errors
+ tmp.py:1:16: E201 whitespace after '('
+tmp.py:1:25: E202 whitespace before ')'
+tmp.py:2:17: E211 whitespace before '('
+tmp.py:2:22: E201 whitespace after '('
+tmp.py:2:32: E202 whitespace before ')'
+tmp.py:3:6: E114 indentation is not a multiple of four (comment)
+tmp.py:3:6: E265 block comment should start with '# '
+tmp.py:4:6: E111 indentation is not a multiple of four
+tmp.py:4:12: E203 whitespace before ':'
+tmp.py:4:13: E701 multiple statements on one line (colon)
+tmp.py:4:18: E225 missing whitespace around operator
+tmp.py:4:21: E702 multiple statements on one line (semicolon)
+tmp.py:4:27: E225 missing whitespace around operator
+tmp.py:4:31: E225 missing whitespace around operator
+tmp.py:4:38: E203 whitespace before ';'
+tmp.py:4:39: E702 multiple statements on one line (semicolon)
+tmp.py:5:6: E111 indentation is not a multiple of four
+
