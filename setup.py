@@ -9,4 +9,4 @@ setup(name='nblint',
       license='MIT',
       packages=['nblint'],
       scripts=['bin/nblint', 'bin/nblint.cmd'],
-      install_requires=['pep8', 'flake8', 'nbformat'])
+      install_requires=['pycodestyle', 'flake8', 'nbformat'])

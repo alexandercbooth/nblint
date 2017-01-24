@@ -16,7 +16,7 @@ args = parser.parse_args()
 nb = nbformat.read(args.notebook[0], as_version=4)
 linter = args.linter
 code_cells = [i.source for i in nb.cells if i.cell_type == 'code']
-commands = {'pep8': (['pep8', 'tmp.py'], 'tmp.py'), 'eslint':
+commands = {'pycodestyle': (['pycodestyle', 'tmp.py'], 'tmp.py'), 'eslint':
             (['eslint', 'tmp.js'], 'tmp.js'),
             'golint': (['/Users/acb/work/bin/golint', 'tmp.go'], 'tmp.go'),
             'lintjl': (['julia -e "using Lint; "', 'tmp.jl'], 'tmp.jl'),
@@ -70,7 +70,7 @@ class BaseLinter:
 
 
 if not linter:
-    BaseLinter().checkCells(linter, 'pep8')
+    BaseLinter().checkCells(linter, 'pycodestyle')
 
 if linter == 'eslint':
     BaseLinter().checkCells(linter, 'eslint')
