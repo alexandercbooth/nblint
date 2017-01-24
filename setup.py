@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='nblint',
-      version='0.0.1',
+      version='0.0.2',
       description='Linting Jupyter notebooks',
       url='http://github.com/alexandercbooth/nblint',
       author='Alexander C. Booth',
