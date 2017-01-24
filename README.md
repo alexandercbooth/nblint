@@ -5,36 +5,37 @@ Lint Jupyter notebooks like a boss
 ---
 ![](boss.gif)
 
+
+A simple CLI tool to wrap lint to Jupyter notebooks.
 ## Installation
+with pip
 ```bash
-git clone https://github.com/alexandercbooth/nblint.git
-python setup.py install
+$ pip install nblint
 ```
-or
+
+or bleeding edge
 ```bash
-pip install git+https://github.com/alexandercbooth/nblint.git
+$ git clone https://github.com/alexandercbooth/nblint.git
+$ python setup.py install
 ```
+
 
 ## Usage
 ### Python
-Runs pep8 as the default linter and supports pyflakes
+Runs pycodestyle as the default linter and supports pyflakes
 ```bash
-nblint pythonNotebook.ipynb
+$ nblint pythonNotebook.ipynb
 ```
 or pyflakes:
 ```bash
-nblint --linter pyflakes pythonNotebook.ipynb
+$ nblint --linter pyflakes pythonNotebook.ipynb
 ```
 Currently supports the following other languages
 ## Go
 ```bash
-nblint --linter golint goNotebook.ipynb
-```
-## R
-```bash
-nblint --linter lintr RNotebook.ipynb
+$ nblint --linter golint goNotebook.ipynb
 ```
 ## JavaScript (es6)
 ```bash
-nblint --linter eslint jsNotebook.ipynb
+$ nblint --linter eslint jsNotebook.ipynb
 ```
