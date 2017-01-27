@@ -18,8 +18,8 @@ install:
   # Useful for debugging any issues with conda
   - conda info -a
 
-  # Replace dep1 dep2 ... with your dependencies
-  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION scikit-learn pandas numpy
+  # Install dependencies
+  - conda create -q -n test-environment python=$TRAVIS_PYTHON_VERSION pycodestyle pyflakes nbformat
   - source activate test-environment
   - "pip install pytest-cov==2.2.1"
   - python setup.py install
