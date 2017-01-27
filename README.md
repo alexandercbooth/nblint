@@ -1,5 +1,6 @@
 # nblint
-[![Build Status](https://travis-ci.com/alexandercbooth/nblint.svg?token=UDZsiVdppziAsV1HLtLw&branch=master)](https://travis-ci.com/alexandercbooth/nblint)
+[![Build Status](https://travis-ci.com/alexandercbooth/nblint.svg?token=UDZsiVdppziAsV1HLtLw&branch=master)](https://travis-ci.com/alexandercbooth/nblint) [![Build status](https://ci.appveyor.com/api/projects/status/53ddbl40npfp9mre?svg=true)](https://ci.appveyor.com/project/alexandercbooth/nblint)
+
 
 Lint Jupyter notebooks like a boss
 ---

@@ -15,18 +15,22 @@ init:
   # Use AppVeyor's provided Miniconda: https://www.appveyor.com/docs/installed-software#python
   - set MINICONDA=C:\Miniconda35-x64
   - set PATH=%MINICONDA%;%MINICONDA%/Scripts;%MINICONDA%/Library/bin;%PATH%
+  - doskey nblint=C:\Python35-x64\Scripts\nblint.cmd
 
 install:
   # We need wheel installed to build wheels
   - "%PYTHON%\\python.exe -m pip install wheel"
   - conda install -q -y notebook
-  - "%PYTHON%\\python.exe setup.py install"
+  - "%PYTHON%\\python.exe -m pip install ."
+  - "%PYTHON%\\python.exe -m pip install pytest"
+  - "%PYTHON%\\python.exe -m pip install pytest-cov==2.2.1"
 
 
 build: off
 
 test_script:
-  - cd nblint/tests/; py.test -v --cov=. test_linters.py --verbose
+  - nblint nblint\examplenbs\py.ipynb
+  - "%PYTHON%/Scripts/py.test -v --cov=nblint\\tests\\ nblint\\tests\\test_linters.py --verbose"
   # Put your test command here.
   # If you don't need to build C extensions on 64-bit Python 3.3 or 3.4,
   # you can remove "build.cmd" from the front of the command, as it's
@@ -34,7 +38,6 @@ test_script:
   # Note that you must use the environment variable %PYTHON% to refer to
   # the interpreter you're using - Appveyor does not do anything special
   # to put the Python evrsion you want to use on PATH.
-  - "build.cmd %PYTHON%\\python.exe setup.py test"
 
 # after_test:
 #   # This step builds your wheels.
